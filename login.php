@@ -11,11 +11,11 @@ if (isset($_POST['registro'])) {
 
     $num_filas = mysqli_num_rows($query);
 
-    var_dump($num_filas);
+  
 
     if ($num_filas) {
 
-        echo 'Te has logueado exitosamente 😊!';
+        echo "<script> window.location='plataforma.php'; </script>";
     } else {
         echo '<script language="javascript">alert("El usuario y contraseña no están registrados aún 🙄");</script>';
     }
